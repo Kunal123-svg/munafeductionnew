@@ -128,7 +128,7 @@
       border: 1px solid rgba(248,166,43,.35);
       border-radius: 14px;
       padding: 15px 12px;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
 
     .offer h2 {
@@ -143,23 +143,34 @@
       line-height: 1.6;
     }
 
+    /* Both buttons stay side-by-side */
+    .button-row {
+      display: flex;
+      gap: 10px;
+      align-items: stretch;
+      width: 100%;
+      margin: 14px 0;
+    }
+
     .btn-telegram {
       display: block;
       position: relative;
       isolation: isolate;
       overflow: hidden;
-      width: 100%;
-      padding: 16px 12px;
-      margin: 13px 0;
+      flex: 1;
+      min-width: 0;
+      padding: 15px 7px;
       border: none;
       border-radius: 12px;
       color: #17100a;
       background: linear-gradient(90deg,#ffb52e,#ff7b22);
       box-shadow: 0 6px 20px rgba(255,139,32,.22);
-      font-size: 16px;
+      font-size: 12px;
+      line-height: 1.4;
       font-weight: 900;
       text-decoration: none;
       text-align: center;
+      overflow-wrap: anywhere;
       animation: buttonPulse 2s ease-in-out infinite;
     }
 
@@ -191,7 +202,7 @@
       color: #aeb8ca;
       font-size: 12px;
       line-height: 1.6;
-      margin-top: 10px;
+      margin-top: 8px;
     }
 
     .disclaimer {
@@ -227,9 +238,11 @@
     }
 
     @media (max-width: 360px) {
+      body { padding: 12px 8px; }
+      .content { padding: 18px 12px; }
       h1 { font-size: 23px; }
-      .content { padding: 18px 13px; }
-      .btn-telegram { font-size: 14px; }
+      .button-row { gap: 7px; }
+      .btn-telegram { font-size: 11px; padding: 14px 5px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -246,6 +259,7 @@
     <header class="header">
       <img class="logo" src="logo.png" alt="TRADE WITH MUNAF logo"
            onerror="this.style.display='none'">
+
       <h1>TRADE WITH MUNAF</h1>
       <p class="subtitle">
         Market insights, educational content and trading analysis
@@ -275,21 +289,23 @@
         </p>
       </div>
 
-      <a class="btn-telegram telegram-link"
-         href="https://t.me/+Ze8EngVz1KZmOWFl"
-         target="_blank" rel="noopener noreferrer">
-        ✈️ JOIN TELEGRAM NOW
-      </a>
+      <div class="button-row">
+        <a class="btn-telegram telegram-link"
+           href="https://t.me/+Ze8EngVz1KZmOWFl"
+           target="_blank" rel="noopener noreferrer">
+          ✈️ JOIN TELEGRAM
+        </a>
+
+        <a class="btn-telegram telegram-link"
+           href="https://t.me/+Ze8EngVz1KZmOWFl"
+           target="_blank" rel="noopener noreferrer">
+          🚀 JOIN CHANNEL
+        </a>
+      </div>
 
       <p class="telegram-note">
-        Tap the button above to open our Telegram channel.
+        Tap either button to open our Telegram channel.
       </p>
-
-      <a class="btn-telegram telegram-link"
-         href="https://t.me/+Ze8EngVz1KZmOWFl"
-         target="_blank" rel="noopener noreferrer">
-        🚀 JOIN OUR CHANNEL
-      </a>
 
       <p class="disclaimer">
         Educational information only. Trading and investing involve
