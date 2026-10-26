@@ -1,197 +1,337 @@
 <!DOCTYPE html>
-<html lang="te">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Day Trader Telugu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b12">
+  <title>TRADE WITH MUNAF</title>
 
-<!-- ✅ UPDATED Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1001187529694240');
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1001187529694240&ev=PageView&noscript=1"
+    alt="">
+  </noscript>
+  <!-- End Meta Pixel Code -->
 
-fbq('init', '1679386723028030'); 
-fbq('track', 'PageView');
-</script>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1679386723028030&ev=PageView&noscript=1"/>
-</noscript>
-<!-- END Meta Pixel Code -->
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      background: radial-gradient(ellipse at top, #18213a 0%, #080b12 55%);
+      min-height: 100vh;
+      padding: 22px 14px;
+    }
 
-<style>
+    .container {
+      width: 100%;
+      max-width: 440px;
+      margin: 0 auto;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 22px;
+      background: rgba(13,17,29,.96);
+      box-shadow: 0 15px 45px rgba(0,0,0,.4);
+    }
 
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
-}
+    .header {
+      text-align: center;
+      padding: 27px 18px 22px;
+      background: linear-gradient(135deg,#202c4a,#101626);
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
 
-body{
-font-family:Arial;
-background:linear-gradient(135deg,#020617,#0f172a);
-color:white;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-}
+    .logo {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #f8a62b;
+      box-shadow: 0 0 24px rgba(248,166,43,.3);
+      margin-bottom: 15px;
+    }
 
-.container{
-width:380px;
-background:#111827;
-border-radius:25px;
-padding:30px;
-text-align:center;
-box-shadow:0 10px 40px rgba(0,0,0,0.8);
-}
+    h1 {
+      font-size: 27px;
+      line-height: 1.25;
+      letter-spacing: 1px;
+      font-weight: 900;
+    }
 
-.logo{
-width:110px;
-height:110px;
-border-radius:100px;
-margin-bottom:15px;
-animation:float 3s ease-in-out infinite;
-}
+    .subtitle {
+      margin-top: 9px;
+      color: #c8d0e0;
+      font-size: 13px;
+      line-height: 1.6;
+    }
 
-@keyframes float{
-0%{transform:translateY(0)}
-50%{transform:translateY(-12px)}
-100%{transform:translateY(0)}
-}
+    .content {
+      padding: 22px 18px;
+      text-align: center;
+    }
 
-h1{
-font-size:26px;
-margin-bottom:5px;
-}
+    .welcome {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 9px;
+    }
 
-.badge{
-background:linear-gradient(45deg,#ff512f,#ff9966);
-padding:12px 20px;
-border-radius:30px;
-display:inline-block;
-margin:15px 0;
-font-weight:bold;
-}
+    .description {
+      color: #c0c7d5;
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
 
-.telegram-btn{
-display:block;
-margin:20px 0;
-padding:18px;
-border-radius:50px;
-background:linear-gradient(90deg,#00c6ff,#0072ff);
-color:white;
-font-weight:bold;
-font-size:18px;
-text-decoration:none;
-animation:glow 1.5s infinite;
-}
+    .features {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 22px;
+      text-align: left;
+    }
 
-@keyframes glow{
-0%{box-shadow:0 0 5px #00c6ff;}
-50%{box-shadow:0 0 25px #00c6ff;}
-100%{box-shadow:0 0 5px #00c6ff;}
-}
+    .feature {
+      padding: 13px;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 12px;
+      background: rgba(255,255,255,.035);
+      color: #e8edf7;
+      font-size: 14px;
+      line-height: 1.5;
+    }
 
-.text{
-margin-top:15px;
-line-height:1.7;
-font-size:16px;
-}
+    .feature span {
+      margin-right: 8px;
+    }
 
-.highlight{
-color:#ff6b6b;
-font-weight:bold;
-}
+    .offer {
+      background: linear-gradient(135deg,rgba(248,166,43,.13),rgba(255,111,46,.06));
+      border: 1px solid rgba(248,166,43,.35);
+      border-radius: 14px;
+      padding: 15px 12px;
+      margin-bottom: 20px;
+    }
 
-.profit{
-color:#ffd700;
-font-size:20px;
-margin:20px 0;
-font-weight:bold;
-}
+    .offer h2 {
+      color: #ffbd59;
+      font-size: 17px;
+      margin-bottom: 6px;
+    }
 
-.features{
-margin-top:10px;
-text-align:left;
-line-height:2;
-font-size:15px;
-}
+    .offer p {
+      color: #d0d5df;
+      font-size: 13px;
+      line-height: 1.6;
+    }
 
-.dm-btn{
-display:block;
-margin-top:20px;
-padding:16px;
-border-radius:40px;
-background:linear-gradient(90deg,#22c55e,#16a34a);
-color:white;
-font-weight:bold;
-text-decoration:none;
-}
+    .btn-telegram {
+      display: block;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      width: 100%;
+      padding: 16px 12px;
+      margin: 13px 0;
+      border: none;
+      border-radius: 12px;
+      color: #17100a;
+      background: linear-gradient(90deg,#ffb52e,#ff7b22);
+      box-shadow: 0 6px 20px rgba(255,139,32,.22);
+      font-size: 16px;
+      font-weight: 900;
+      text-decoration: none;
+      text-align: center;
+      animation: buttonPulse 2s ease-in-out infinite;
+    }
 
-.footer{
-margin-top:20px;
-font-size:13px;
-color:#9ca3af;
-}
+    .btn-telegram::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -75%;
+      width: 45%;
+      height: 100%;
+      background: linear-gradient(90deg,transparent,rgba(255,255,255,.85),transparent);
+      transform: skewX(-22deg);
+      animation: buttonShine 2s ease-in-out infinite;
+      pointer-events: none;
+      z-index: -1;
+    }
 
-</style>
+    @keyframes buttonShine {
+      0% { left: -75%; }
+      60%, 100% { left: 135%; }
+    }
+
+    @keyframes buttonPulse {
+      0%, 100% { box-shadow: 0 6px 20px rgba(255,139,32,.2); }
+      50% { box-shadow: 0 6px 27px rgba(255,139,32,.45); }
+    }
+
+    .telegram-note {
+      color: #aeb8ca;
+      font-size: 12px;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .disclaimer {
+      color: #8993a6;
+      font-size: 11px;
+      line-height: 1.7;
+      margin-top: 18px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 17px 12px 20px;
+      border-top: 1px solid rgba(255,255,255,.09);
+      background: rgba(0,0,0,.15);
+    }
+
+    .footer-text {
+      color: #9da8bb;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .footer a {
+      color: #ffb34a;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    #redirect-message {
+      color: #c0c7d5;
+      margin-top: 6px;
+      font-size: 12px;
+    }
+
+    @media (max-width: 360px) {
+      h1 { font-size: 23px; }
+      .content { padding: 18px 13px; }
+      .btn-telegram { font-size: 14px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .btn-telegram,
+      .btn-telegram::before {
+        animation: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <main class="container">
+    <header class="header">
+      <img class="logo" src="logo.png" alt="TRADE WITH MUNAF logo"
+           onerror="this.style.display='none'">
+      <h1>TRADE WITH MUNAF</h1>
+      <p class="subtitle">
+        Market insights, educational content and trading analysis
+      </p>
+    </header>
 
-<div class="container">
+    <section class="content">
+      <h2 class="welcome">Welcome to Our Telegram Channel</h2>
 
-<img src="logo.png" class="logo">
+      <p class="description">
+        Join our Telegram community to explore market updates,
+        trading education and analysis. Learn about market risks
+        and make informed decisions.
+      </p>
 
-<h1>📈 Day Trader తెలుగు</h1>
-<div>💸🏆</div>
+      <div class="features">
+        <div class="feature"><span>📊</span> Market updates and educational analysis</div>
+        <div class="feature"><span>📈</span> Trading concepts and learning resources</div>
+        <div class="feature"><span>📚</span> Learn about risk management</div>
+      </div>
 
-<div class="badge">🚀 17+ సంవత్సరాల ట్రేడింగ్ అనుభవం</div>
+      <div class="offer">
+        <h2>Join Our Telegram Community</h2>
+        <p>
+          Get access to channel updates and learning resources.
+          Trading involves risk; profits are not guaranteed.
+        </p>
+      </div>
 
-<div>👇👇👇</div>
+      <a class="btn-telegram telegram-link"
+         href="https://t.me/+Ze8EngVz1KZmOWFl"
+         target="_blank" rel="noopener noreferrer">
+        ✈️ JOIN TELEGRAM NOW
+      </a>
 
-<a class="telegram-btn" href="https://t.me/+9WhFzjPgU5M1MTZl" target="_blank"
-onclick="fbq('track','Lead');">
-JOIN TELEGRAM CHANNEL
-</a>
+      <p class="telegram-note">
+        Tap the button above to open our Telegram channel.
+      </p>
 
-<div class="text">
-మీరు ట్రేడింగ్ ద్వారా డబ్బు సంపాదించాలనుకుంటున్నారా?<br><br>
-<span class="highlight">
-అయితే పై టెలిగ్రామ్ బటన్ పై క్లిక్ చేయండి 🚀
-</span>
-</div>
+      <a class="btn-telegram telegram-link"
+         href="https://t.me/+Ze8EngVz1KZmOWFl"
+         target="_blank" rel="noopener noreferrer">
+        🚀 JOIN OUR CHANNEL
+      </a>
 
-<div class="profit">
-💎 DAILY PROFIT GUARANTEE 💎
-</div>
+      <p class="disclaimer">
+        Educational information only. Trading and investing involve
+        financial risk. Always do your own research; no returns
+        or profits are guaranteed.
+      </p>
+    </section>
 
-<div class="features">
-📊 మా పోర్ట్‌ఫోలియో నుండి లైవ్ ట్రేడ్స్<br>
-🔥 ప్రొఫెషనల్స్ వాడే సిగ్నల్స్<br>
-💯 హై అక్యూరసీ & కన్సిస్టెన్సీ<br>
-⚡ రియల్ టైమ్ అప్డేట్స్
-</div>
+    <footer class="footer">
+      <div class="footer-text">
+        Ads Manage by
+        <a href="https://t.me/+jE7sEbzR23gwM2U1"
+           target="_blank" rel="noopener noreferrer">Kunal</a>
+        <div id="redirect-message">Opening Telegram in 7 seconds...</div>
+      </div>
+    </footer>
+  </main>
 
-<a class="dm-btn" href="https://t.me/+hZA7we0AX_s3ZWQ1" target="_blank"
-onclick="fbq('track','Contact');">
-👉 Meta Ads Setup కోసం DM చేయండి  
-<br> Kunal Ads Agency
-</a>
+  <script>
+    (function () {
+      var telegramURL = "https://t.me/+Ze8EngVz1KZmOWFl";
+      var remaining = 7;
+      var message = document.getElementById("redirect-message");
 
-<div class="footer">
-©️ 2026 Day Trader Telugu - All rights reserved
-</div>
+      var redirectTimer = setInterval(function () {
+        remaining--;
 
-</div>
+        if (remaining > 0) {
+          message.textContent = "Opening Telegram in " + remaining + " seconds...";
+        } else {
+          clearInterval(redirectTimer);
+          message.textContent = "Opening Telegram...";
+          window.location.href = telegramURL;
+        }
+      }, 1000);
 
+      document.querySelectorAll(".telegram-link").forEach(function (button) {
+        button.addEventListener("click", function () {
+          clearInterval(redirectTimer);
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
